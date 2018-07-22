@@ -23,6 +23,12 @@ The `app_list.js` can be pasted in your browser JS console when you visit a Goog
 # Step-by-step - Linux
 First of all, you have to [install R](https://pbil.univ-lyon1.fr/CRAN/).
 
+### Install R on `debian`'s like systems: 
+`sudo apt-get install r-base r-base-dev`
+
+#### This script need specifics dependencies which had to be installed too:
+`sudo apt-get install r-cran-ggplot2 r-cran-rjson`
+
 Then, clone or download this Git repository:
 ```
 cd $HOME
