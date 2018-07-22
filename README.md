@@ -12,6 +12,7 @@ The `post_gdpr_stats.r` script takes 3 positional parameters:
 * the name of your current study like *Popular* for popular applications, this name will be used as plot title
 * the file containing a list of application handles (one per line) to take in account. This file has to have an empty line at its end.
 
+To execute this script, run the following command line:
 ```
 Rscript --vanilla post_gdpr_stats.r $PWD Popular popular.txt
 ```
