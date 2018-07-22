@@ -17,5 +17,5 @@ Rscript --vanilla post_gdpr_stats.r $PWD Popular popular.txt
 ```
 
 # Application list file
-The `app_list.js` can be pasted in your browser JS console when you visit a Google Play store page listing applications ([the popular category](https://play.google.com/store/apps/collection/topselling_free). The script with replace the content of the web page with the list of applications found in the page. 
+The `app_list.js` can be pasted in your browser JS console when you visit a Google Play store page listing applications ([the popular category](https://play.google.com/store/apps/collection/topselling_free)). The script with replace the content of the web page with the list of applications found in the page. 
 
