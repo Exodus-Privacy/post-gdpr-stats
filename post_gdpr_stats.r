@@ -19,7 +19,7 @@ get_top_reports <- function(app_list_file){
   reports <- c()
   for(app in top_apps){
     url <- sprintf("https://reports.exodus-privacy.eu.org/api/search/%s", app)
-    result <- rjson::fromJSON(file=url)
+    result <- tryCatch({rjson::fromJSON(file=url)}, error = function(e) {return(list())})
     if(length(result) == 1){
       reports <- c(reports, result)
       print(paste("Found -", app))
