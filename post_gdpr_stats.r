@@ -178,7 +178,7 @@ count <- c(length(d[d$state=="No change",]$name), length(d[d$state=="Worse",]$na
 f <- data.frame(states, count)
 ggplot(f, aes(x=reorder(states, count), y=count, fill=states)) + 
   geom_bar(stat="identity") + 
-  xlab("Number of trackers evolution post-GDPR") + 
+  xlab("Betterment post-GDPR") + 
   ylab("Number of applications") +
   scale_fill_manual(values = c("No change" = "#424b54", "Worse" = "#da3b20", "Better" = "#0cc97a")) + 
   theme(legend.position="none") + 
@@ -203,7 +203,7 @@ ggplot(d, aes(x=reorder(name, diff), y=diff, fill=as.character(clean))) +
         legend.text = element_text(colour="#424b54", size=8), 
         legend.title = element_text(colour="#684971", size=8)) + 
   xlab("Applications") + 
-  ylab("Number of trackers difference post-GDPR") +
+  ylab("Trackers addition and removal pre/post GDPR") +
   labs(caption = label, title = RUN_NAME) +
   theme(axis.text.x=element_text(colour="#684971", family = "AvantGarde"), 
         axis.text.y=element_text(colour="#684971", family = "AvantGarde")) + 
