@@ -173,7 +173,7 @@ d <- stats$d_frame
 if(length(d) < 2){
   stop("No enough data", call.=FALSE)
 }
-states <- c("No change", "More trackers", "Fewer trackers")
+states <- c("No change", "Worse", "Better")
 count <- c(length(d[d$state=="No change",]$name), length(d[d$state=="Worse",]$name), length(d[d$state=="Better",]$name))
 f <- data.frame(states, count)
 ggplot(f, aes(x=reorder(states, count), y=count, fill=states)) + 
